@@ -14,7 +14,6 @@ export default function Footer() {
                 </div>
                 <span className="text-xl font-semibold text-white tracking-tight">ManitobaLottoInfo</span>
               </Link>
-              
             </div>
             <p className="text-[#71717a] text-sm leading-relaxed max-w-md">
               Your trusted source for Canadian lottery information. We provide comprehensive lottery details and number
@@ -66,7 +65,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-[#1a1a1a] pt-8 mb-8">
-          <div className="text-xs text-[#52525b] space-y-3 max-w-4xl">
+          <div className="text-sm text-[#a1a1aa] space-y-4 max-w-5xl">
             <p>
               Think before you play. Play responsibly. If you need help, call 1-800-461-0140 or visit{" "}
               <a
@@ -77,16 +76,33 @@ export default function Footer() {
               >
                 aidejeu.ca
               </a>
+              . Gambling can be addictive. Please set limits and play within your means.
             </p>
             <p>
-              This website is operated by 2025 Winnipeg Blue Bombers under license LGCA 1482-RF-47323. Gambling is
-              strictly prohibited for individuals under the age of 18.
+              This website is operated by 2025 Winnipeg Blue Bombers under license LGCA 1482-RF-47323, issued on
+              November 1, 2025. The licensed event runs from November 1, 2025 to November 2, 2026.
+            </p>
+            <p>
+              Gambling is strictly prohibited for individuals under the age of 18. Participation must comply with all
+              applicable laws and regulations. By participating, you acknowledge that you are of legal gambling age in
+              your jurisdiction.
+            </p>
+            <p>
+              For more information on responsible gambling and support resources, visit{" "}
+              <a
+                href="https://responsiblegambling.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#10b981] hover:underline"
+              >
+                https://responsiblegambling.org/
+              </a>
             </p>
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-          <div className="bg-white rounded-xl p-4 flex flex-wrap items-center justify-center gap-6">
+                    <div className="bg-white rounded-xl p-4 flex flex-wrap items-center justify-center gap-6">
             <a
               href="https://aidejeu.ca/en/"
               target="_blank"
@@ -132,6 +148,7 @@ export default function Footer() {
               />
             </a>
           </div>
+
 
           <p className="text-xs text-[#52525b]">© 2025 Manitoba Liquor & Lotteries Corporation</p>
         </div>

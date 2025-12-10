@@ -45,21 +45,7 @@ const LOTTERY_GAMES = {
   },
 }
 
-const PROVINCES = [
-  "Alberta",
-  "British Columbia",
-  "Manitoba",
-  "New Brunswick",
-  "Newfoundland and Labrador",
-  "Northwest Territories",
-  "Nova Scotia",
-  "Nunavut",
-  "Ontario",
-  "Prince Edward Island",
-  "Quebec",
-  "Saskatchewan",
-  "Yukon",
-]
+const PROVINCES = ["Alberta", "British Columbia", "Quebec"]
 
 function BuyTicketsContent() {
   const searchParams = useSearchParams()
@@ -226,7 +212,7 @@ function BuyTicketsContent() {
                       className={`w-12 h-12 rounded-xl flex items-center justify-center text-lg font-bold transition-all ${
                         selectedNumbers[i]
                           ? "bg-[#10b981] text-white shadow-lg shadow-[#10b981]/30"
-                          : "bg-white border-2 border-dashed border-[#e4e4e7] text-[#e4e4e7]"
+                          : "bg-white border-2 border-dashed border-[#e4e4e7] text-[#e4e4d8]"
                       }`}
                     >
                       {selectedNumbers[i] || "?"}
@@ -325,7 +311,7 @@ function BuyTicketsContent() {
                   <SelectTrigger className="border-[#e4e4e7] rounded-xl">
                     <SelectValue placeholder="Select your province" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="max-h-[300px] overflow-y-auto">
                     {PROVINCES.map((p) => (
                       <SelectItem key={p} value={p}>
                         {p}
